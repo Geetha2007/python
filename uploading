@@ -1,0 +1,9 @@
+import os
+repo_url = "https://github.com/your-username/your-repository.git"
+os.system("git init")
+os.system("git add .")
+os.system('git commit -m "Initial commit from Python"')
+os.system(f"git remote add origin {repo_url}")
+os.system("git branch -M main")
+os.system("git push -u origin main")
+print("✅ Files uploaded to GitHub successfully!")
